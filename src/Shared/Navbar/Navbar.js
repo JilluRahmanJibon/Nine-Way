@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-
+import { IoMdMail } from 'react-icons/io';
+import { BsTelephoneFill } from 'react-icons/bs';
+import logo from '../../Assests/9way.png'
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -48,17 +50,27 @@ const Navbar = () => {
             <a
                 href="/"
                 class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
+                aria-label="Sign In"
                 title="Sign up"
             >
-                Sign up
+                Sign In
             </a>
         </li>
     </React.Fragment>
 
     return (
         <section>
-            <div className='w-[1300px] mx-auto'>
+            <div className='bg-white'>
+                <div className='xl:w-[1250px] lg:w-[1000px] py-1 md:w-[800px] sm:w-[600px] mx-auto sm:px-0 px-3 flex gap-5 '>
+                    <div>
+                      <a href="tel:01674931378" className='flex gap-2 '><BsTelephoneFill className='mt-1'/> 01674931378</a> 
+                    </div>
+                    <div>
+                        <a href="mailto:afia.nasrin3e@gmail.com " className='flex gap-2 '><IoMdMail className='mt-1'/> afia.nasrin3e@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div className='xl:w-[1250px] lg:w-[1000px] py-1 md:w-[800px] sm:w-[600px] mx-auto sm:px-0 px-3'>
                 <div class="relative flex items-center justify-between">
                     <a
                         href="/"
@@ -66,12 +78,7 @@ const Navbar = () => {
                         title="9Way"
                         class="inline-flex items-center"
                     >
-                        <span class="ml-2 text-2xl font-bold tracking-wide italic ">
-                            9
-                        </span>
-                        <span >
-                            Way
-                        </span>
+                        <img className='w-24' src={logo} alt="9Way" />
                     </a>
                     <ul class=" items-center hidden space-x-8 lg:flex">
                         {menuIntems}
@@ -109,12 +116,8 @@ const Navbar = () => {
                                                 title="9Way"
                                                 class="inline-flex items-center"
                                             >
-                                                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    9
-                                                </span>
-                                                <span >
-                                                    Way
-                                                </span>
+                                                <img className='w-24' src={logo} alt="9Way" />
+
                                             </a>
                                         </div>
                                         <div>
