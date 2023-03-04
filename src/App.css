@@ -1,4 +1,5 @@
 /* background-image: linear-gradient(90deg, #9421e9, #00ba88 100%); */
-html {
-	background: linear-gradient(90deg, #00d5ff, #cc00ff 100%) !important;
+body {
+	/* background: linear-gradient(90deg, #00d5ff, #cc00ff 100%) !important; */
+	background: linear-gradient(90deg, #1a2129, #1a2129 100%) !important;
 }

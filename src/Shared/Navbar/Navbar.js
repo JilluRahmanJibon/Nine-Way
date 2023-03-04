@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { IoMdMail } from 'react-icons/io';
 import { BsTelephoneFill } from 'react-icons/bs';
-import logo from '../../Assests/9way.png'
+import logo from '../../Assests/Logo/9way.png'
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -60,13 +60,13 @@ const Navbar = () => {
 
     return (
         <section>
-            <div className='bg-white'>
+            <div className='bg-[#a9904f] text-white'>
                 <div className='xl:w-[1250px] lg:w-[1000px] py-1 md:w-[800px] sm:w-[600px] mx-auto sm:px-0 px-3 flex gap-5 '>
                     <div>
-                      <a href="tel:01674931378" className='flex gap-2 '><BsTelephoneFill className='mt-1'/> 01674931378</a> 
+                        <a href="tel:01674931378" className='flex gap-2 '><BsTelephoneFill className='mt-1' /> 01674931378</a>
                     </div>
                     <div>
-                        <a href="mailto:afia.nasrin3e@gmail.com " className='flex gap-2 '><IoMdMail className='mt-1'/> afia.nasrin3e@gmail.com</a>
+                        <a href="mailto:afia.nasrin3e@gmail.com " className='flex gap-2 '><IoMdMail className='mt-1' /> afia.nasrin3e@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
                         title="9Way"
                         class="inline-flex items-center"
                     >
-                        <img className='w-24' src={logo} alt="9Way" />
+                        <img className='w-36' src={logo} alt="9Way" />
                     </a>
                     <ul class=" items-center hidden space-x-8 lg:flex">
                         {menuIntems}
@@ -116,7 +116,7 @@ const Navbar = () => {
                                                 title="9Way"
                                                 class="inline-flex items-center"
                                             >
-                                                <img className='w-24' src={logo} alt="9Way" />
+                                                <img className='w-32' src={logo} alt="9Way" />
 
                                             </a>
                                         </div>
