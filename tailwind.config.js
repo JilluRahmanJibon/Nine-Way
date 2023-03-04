@@ -3,29 +3,28 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   themes: [
     {
-      mytheme: {
+      NineWayTheme: {
 
-        primary: "#2f0848",
+        "primary": "#341f57",
 
-        secondary: "#D926AA",
+        "secondary": "#361e57",
 
-        accent: "#1FB2A5",
+        "accent": "#1FB2A5",
 
-        neutral: "#191D24",
+        "neutral": "#191D24",
 
-        info: "#3ABFF8",
+        "info": "#3ABFF8",
 
-        success: "#36D399",
+        "success": "#36D399",
 
-        warning: "#FBBD23",
+        "warning": "#FBBD23",
 
-        error: "#F87272",
+        "error": "#F87272",
       },
     },
   ],
   theme: {
     extend: {},
   },
-
   plugins: [require("daisyui")],
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoMdMail } from 'react-icons/io';
 import { BsTelephoneFill } from 'react-icons/bs';
 import logo from '../../Assests/Logo/9way.png'
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,7 +12,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
                 Product
             </a>
@@ -21,7 +22,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
                 Features
             </a>
@@ -31,7 +32,7 @@ const Navbar = () => {
                 href="/"
                 aria-label="Product pricing"
                 title="Product pricing"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
                 Pricing
             </a>
@@ -41,27 +42,28 @@ const Navbar = () => {
                 href="/"
                 aria-label="About us"
                 title="About us"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
             >
                 About us
             </a>
         </li>
         <li>
-            <a
-                href="/"
-                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign In"
-                title="Sign up"
-            >
-                Sign In
-            </a>
+
+            <Link to={``} class="relative inline-block text-lg group">
+                <span class="relative z-10 block px-5 py-[10px] overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-[#632662] rounded-lg group-hover:text-white">
+                    <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                    <span class="absolute left-0 w-48 h-36 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#632662] group-hover:-rotate-180 ease"></span>
+                    <span class="relative">Login</span>
+                </span>
+                <span class="absolute bottom-0 right-0 w-full h-11 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-[#632662] rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+            </Link>
         </li>
     </React.Fragment>
 
     return (
         <section>
-            <div className='bg-[#a9904f] text-white'>
-                <div className='xl:w-[1250px] lg:w-[1000px] py-1 md:w-[800px] sm:w-[600px] mx-auto sm:px-0 px-3 flex gap-5 '>
+            <div className='bg-gradient-to-r from-[#632662] to-[#311e56] text-white'>
+                <div className='xl:w-[1250px] lg:w-[1000px] py-2 md:w-[800px] sm:w-[600px] mx-auto sm:px-0 px-3 flex gap-5 '>
                     <div>
                         <a href="tel:01674931378" className='flex gap-2 '><BsTelephoneFill className='mt-1' /> 01674931378</a>
                     </div>
@@ -78,7 +80,7 @@ const Navbar = () => {
                         title="9Way"
                         class="inline-flex items-center"
                     >
-                        <img className='w-36' src={logo} alt="9Way" />
+                        <img className='w-40' src={logo} alt="9Way" />
                     </a>
                     <ul class=" items-center hidden space-x-8 lg:flex">
                         {menuIntems}
