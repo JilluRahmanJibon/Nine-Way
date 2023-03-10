@@ -1,1 +1,6 @@
- 
+.text-primary {
+	color: #351f57 !important;
+}
+.bg-primary {
+	background: #351f57 !important;
+}

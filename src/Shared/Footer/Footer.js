@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <section>
             <div className='xl:w-[1250px] lg:w-[1000px] md:w-[800px] sm:w-[600px] mx-auto sm:px-0 px-3'>
-                <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div className=" pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
                     <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
                         <div className="sm:col-span-2">
                             <h1 className="text-base font-bold tracking-wide text-gray-900 pb-3">Office Address</h1>
@@ -22,41 +22,12 @@ const Footer = () => {
                             <h1 className="text-base font-bold tracking-wide text-gray-900 pb-3">
                                 Useful Links
                             </h1>
-                            <div className="flex">
-                                <p className="mr-1 text-gray-800">Phone:</p>
-                                <a
-                                    href="tel:850-123-5021"
-                                    aria-label="Our phone"
-                                    title="Our phone"
-                                    className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                                >
-                                    850-123-5021
-                                </a>
-                            </div>
-                            <div className="flex">
-                                <p className="mr-1 text-gray-800">Email:</p>
-                                <a
-                                    href="mailto:info@lorem.mail"
-                                    aria-label="Our email"
-                                    title="Our email"
-                                    className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                                >
-                                    info@lorem.mail
-                                </a>
-                            </div>
-                            <div className="flex">
-                                <p className="mr-1 text-gray-800">Address:</p>
-                                <a
-                                    href="https://www.google.com/maps"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Our address"
-                                    title="Our address"
-                                    className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                                >
-                                    312 Lovely Street, NY
-                                </a>
-                            </div>
+                            <ul className='font-medium'>
+                                <li><a href="">Here Important links</a></li>
+                                <li><a href="">Here Important links</a></li>
+                                <li><a href="">Here Important links</a></li>
+                                <li><a href="">Here Important links</a></li>
+                             </ul>
                         </div>
                         <div>
                             <h2 className="text-base font-bold tracking-wide text-gray-900 pb-3">

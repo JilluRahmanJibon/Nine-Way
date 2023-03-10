@@ -14,13 +14,14 @@ const Banner = () => {
                         Welcome To <br />
                         <span> NINE WAY TECHNOLOGIES</span>
                     </h1>
-                     
+
                     <p className='pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores, quaerat, perspiciatis iusto nisi corporis earum quasi minus molestiae, doloribus nam. Esse quibusdam illo voluptas officia illum labore deleniti cupiditate!</p>
 
                     <div className='space-x-3'>
                         <PrimaryButton >Contact Us</PrimaryButton>
                         <PrimaryButton >Our Courses </PrimaryButton>
                     </div>
+                    <p>Build Dynamic, Innovative and Edgy career</p>
                 </div>
             </div>
 
@@ -32,10 +33,10 @@ const Banner = () => {
                     <div className='absolute top-[46%] left-[46%]   bg-white p-3 rounded-full cursor-pointer '>
                         <FaRegPlayCircle className='text-primary' />
                     </div>
-                    <div className='absolute top-[46%] left-[46%] hover:animate-ping bg-white p-3 rounded-full cursor-pointer '>
+                    <div className='absolute  top-[46%] left-[46%] hover:animate-ping bg-white p-3 rounded-full cursor-pointer '>
                         <FaRegPlayCircle className='text-primary' />
                     </div>
-                    <img className='rounded-2xl bg-[#b78e45] p-2 ' src="https://i.ibb.co/JdrV0mx/photo-1579621970795-87facc2f976d-ixlib-rb-4-0.jpg" alt="" />
+                    <img className='rounded-2xl max-h-[400px] w-full bg-[#b78e45] p-2 ' src="https://i.ibb.co/JdrV0mx/photo-1579621970795-87facc2f976d-ixlib-rb-4-0.jpg" alt="" />
 
                 </label>
                 <div>

@@ -5,7 +5,7 @@ module.exports = {
     {
       NineWayTheme: {
 
-        "primary": "#341f57",
+        "primary": "#351f57",
 
         "secondary": "#361e57",
 
