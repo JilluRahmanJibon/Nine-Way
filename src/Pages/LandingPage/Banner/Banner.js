@@ -29,7 +29,7 @@ const Banner = () => {
                 <div className='absolute top-[48%] -left-8 '>
                     <FaPlus className=' cursor-pointer text-primary' />
                 </div>
-                <label htmlFor="banner-video-modal" className='cursor-pointer' onClick={() => setIsOpen(true)}>
+                <label htmlFor="banner-video-modal" className='cursor-pointer' onClick={() => setIsOpen(false)}>
                     <div className='absolute top-[46%] left-[46%]   bg-white p-3 rounded-full cursor-pointer '>
                         <FaRegPlayCircle className='text-primary' />
                     </div>
@@ -44,7 +44,7 @@ const Banner = () => {
                     <div className="modal  ">
                         <div className=" w-[750px] h-[423px] relative">
                             <label htmlFor="banner-video-modal" className="btn btn-sm btn-circle absolute right-2 top-2" onClick={() => setIsOpen(false)}>✕</label>
-                            <ReactPlayer controls={true} url='https://www.youtube.com/watch?v=YQu9Br72PP8&ab_channel=%D8%B1%D9%88%D8%A7%D8%A6%D8%B9%D9%81%D8%B6%D9%8A%D9%84%D8%A9%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%2F%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%A8%D8%A7%D8%B3%D8%B7%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B5%D9%85%D8%AF' playing={isOpen} width='100%' height='100%' />
+                            <ReactPlayer controls={true} url='https://youtu.be/LJ-ILrtODzs' playing={isOpen} width='100%' height='100%' />
                         </div>
                     </div>
                 </div>
